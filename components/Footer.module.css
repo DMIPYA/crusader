@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--color-stone-950);
+  color: var(--color-stone-200);
+  margin-top: auto;
+}
+
+.footerInner {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-12) var(--gutter) var(--space-6);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.brandText {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--color-stone-50);
+}
+
+.footerTagline {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-stone-400);
+}
+
+.footerLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footerHeading {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-stone-50);
+  margin-bottom: var(--space-1);
+}
+
+.footerColumn a {
+  font-size: var(--text-sm);
+  color: var(--color-stone-400);
+  transition: color var(--transition-fast);
+}
+
+.footerColumn a:hover {
+  color: var(--color-stone-50);
+  opacity: 1;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-stone-800);
+}
+
+.footerCopyright {
+  font-size: var(--text-xs);
+  color: var(--color-stone-500);
+}
+
+.footerLegal {
+  display: flex;
+  gap: var(--space-4);
+  font-size: var(--text-xs);
+}
+
+.footerLegal a {
+  color: var(--color-stone-500);
+  transition: color var(--transition-fast);
+}
+
+.footerLegal a:hover {
+  color: var(--color-stone-300);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footerInner {
+    padding: var(--space-8) var(--gutter) var(--space-4);
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-6);
+  }
+
+  .footerLinks {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+
+  .footerColumn {
+    gap: var(--space-1);
+  }
+
+  .footerColumn a, .footerHeading {
+    font-size: var(--text-xs);
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: flex-start;
+    padding-top: var(--space-4);
+  }
+}

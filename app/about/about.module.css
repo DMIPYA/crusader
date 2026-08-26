@@ -1,0 +1,131 @@
+.aboutPage {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.aboutInner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--gutter);
+}
+
+.aboutHero {
+  margin-bottom: var(--space-16);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.aboutTitle {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-4);
+}
+
+.aboutLead {
+  font-size: var(--text-xl);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.aboutSection {
+  margin-bottom: var(--space-12);
+}
+
+.sectionTitle {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-text-primary);
+}
+
+.sectionContent p {
+  margin: 0;
+}
+
+.materialsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.materialsList li {
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.materialsList li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-text-tertiary);
+}
+
+.materialsList strong {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.aboutCta {
+  margin-top: var(--space-16);
+  padding: var(--space-8);
+  background-color: var(--color-stone-100);
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-3);
+}
+
+.ctaText {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--color-stone-950);
+  color: var(--color-stone-50);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color var(--transition-base);
+}
+
+.ctaButton:hover {
+  background-color: var(--color-stone-800);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .aboutTitle {
+    font-size: var(--text-3xl);
+  }
+
+  .aboutLead {
+    font-size: var(--text-lg);
+  }
+
+  .sectionTitle {
+    font-size: var(--text-xl);
+  }
+
+  .ctaTitle {
+    font-size: var(--text-2xl);
+  }
+
+  .ctaText {
+    font-size: var(--text-base);
+  }
+}

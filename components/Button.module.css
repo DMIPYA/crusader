@@ -1,0 +1,62 @@
+.btn {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.primary {
+  background-color: var(--color-stone-950);
+  color: var(--color-stone-50);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--color-stone-800);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--color-stone-950);
+  border: 1px solid var(--color-stone-950);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--color-stone-950);
+  color: var(--color-stone-50);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--color-stone-950);
+}
+
+.ghost:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+/* Sizes */
+.sm {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-xs);
+}
+
+.md {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.lg {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-base);
+}
